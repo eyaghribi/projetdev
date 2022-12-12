@@ -29,9 +29,9 @@ public class Voyage  implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long idVoyage;
-	
 
-	long codeVoyage;
+
+	private long  codeVoyage;
 	
 	@Enumerated(EnumType.STRING)
 	private Ville gareDepart;
@@ -158,8 +158,14 @@ public class Voyage  implements Serializable {
 	}
 
 
-	public Voyage() {
-		super();
+	public Voyage(long codeVoyage,Ville gareDepart,Ville gareArrivee,double heureDepart,double heureArrivee) {
+
+this.idVoyage = idVoyage;
+this.codeVoyage = codeVoyage;
+this.gareDepart = gareDepart;
+this.gareArrivee = gareArrivee;
+this.heureDepart = heureDepart;
+this.heureArrivee = heureArrivee;
 	}
 	
 	
