@@ -10,7 +10,7 @@ pipeline{
         stages{
 
 
-                          /*  stage('Test unitaires + mock') {
+                           stage('Test unitaires + mock') {
                               steps {
                                script {
                                 sh 'echo "Test is processing ...."'
@@ -19,7 +19,7 @@ pipeline{
 
                               }
 
-                            } */
+                            }
 
               
 		stage("build jar") {
